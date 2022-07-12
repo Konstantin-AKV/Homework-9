@@ -24,7 +24,7 @@ int InputNumbers(string input)
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-int m = InputNumbers("Введите m: ");
+/* int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
 int temp = m;
 if (m > n) 
@@ -38,7 +38,7 @@ void PrintSumm(int m, int n, int summ)
     summ = summ + n;
     if (n <= m)
     {
-        Console.Write($"Сумма элементов= {summ} ");
+        Console.Write($"Сумма элементов = {summ} ");
         return;
     }
     PrintSumm(m, n - 1, summ);
@@ -49,3 +49,25 @@ int InputNumbers(string input)
     int output = Convert.ToInt32(Console.ReadLine());
     return output;
 }
+ */
+
+
+// Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+// m = 2, n = 3 -> A(m,n) = 9
+
+/* Int64 m = InputNumbers("Введите m: ");
+Int64 n = InputNumbers("Введите n: ");
+Int64 functionAkkerman = Ack(m, n);
+Console.Write($"Функция Аккермана = {functionAkkerman} ");
+Int64 Ack(Int64 m, Int64 n)
+{
+    if (m == 0) return n + 1;
+    else if (n == 0) return Ack(m - 1, 1);
+    else return Ack(m - 1, Ack(m, n - 1));
+}
+Int64 InputNumbers(string input) 
+{
+    Console.Write(input);
+    Int64 output = Convert.ToInt64(Console.ReadLine());
+    return output;
+} */
